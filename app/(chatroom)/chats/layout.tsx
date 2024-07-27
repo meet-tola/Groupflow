@@ -1,12 +1,17 @@
 import React from 'react'
+import ItemList from '@/components/shared/item-list/ItemList';
+
 
 type Props = React.PropsWithChildren<{}>;
 
 const ChatsLayout = ({ children }: Props) => {
     return (
-        <div>
+        <>
+        <ItemList title='Chats'>
+        page
+      </ItemList>
            {children} 
-        </div>
+        </>
     )
 }
 
